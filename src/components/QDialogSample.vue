@@ -7,6 +7,7 @@
         <q-toolbar-title>Sample Dialog.</q-toolbar-title>
       </q-toolbar>
       <div class="q-gutter-md q-pa-md">
+        <DropdownMenu />
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam consectetur culpa et excepturi
           facilis fugiat fugit labore magnam necessitatibus numquam, odit quibusdam rem, repellat sequi similique soluta
           suscipit voluptatem?
@@ -15,6 +16,7 @@
           excepturi facilis illo iste iusto natus neque officia qui quidem quod reiciendis sapiente sed! Cum, inventore,
           soluta.
         </div>
+        <DropdownMenu />
         <QInputSimple />
         <div>Beatae dolor labore nam. Ad aspernatur corporis dignissimos et eum fuga ipsam iste, laborum laudantium natus,
           nemo obcaecati provident quae quaerat quas quisquam ratione reprehenderit sint temporibus voluptatem! Quaerat,
@@ -43,6 +45,7 @@
           excepturi exercitationem harum illum, recusandae ut. Animi labore nisi non nostrum officia quisquam ratione sit
           voluptatem.
         </div>
+        <DropdownMenu />
         <QInputSimple />
         <div>Beatae dolor labore nam. Ad aspernatur corporis dignissimos et eum fuga ipsam iste, laborum laudantium natus,
           nemo obcaecati provident quae quaerat quas quisquam ratione reprehenderit sint temporibus voluptatem! Quaerat,
@@ -57,8 +60,10 @@
           excepturi exercitationem harum illum, recusandae ut. Animi labore nisi non nostrum officia quisquam ratione sit
           voluptatem.
         </div>
+        <DropdownMenu />
       </div>
       <q-toolbar>
+        <DropdownMenu />
         <q-space />
         <q-btn
           v-close-popup
@@ -73,10 +78,11 @@
 <script>
 import QInputWithMenu from 'components/QInputWithMenu'
 import QInputSimple from 'components/QInputSimple'
+import DropdownMenu from 'components/DropdownMenu'
 
 export default {
   components: {
-    QInputSimple, QInputWithMenu
+    QInputSimple, QInputWithMenu, DropdownMenu
   },
   data () {
     return {

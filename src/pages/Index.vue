@@ -6,10 +6,12 @@
         color="blue"
         @click="$refs.dialog.open()"
       />
+      <TextEditor />
       <template v-for="i in amountOfOptions">
-        <QInputWithMenu v-if="i % 3 === 0" :key="i" />
-        <QInputSimple v-else-if="i % 3 === 1" :key="i" />
-        <ParagraphOfText v-else-if="i % 3 === 2" :key="i" />
+        <QInputWithMenu v-if="i % 4 === 0" :key="i" />
+        <QInputSimple v-else-if="i % 4 === 1" :key="i" />
+        <ParagraphOfText v-else-if="i % 4 === 2" :key="i" />
+        <DropdownMenu v-else-if="i % 4 === 3" :key="i" />
       </template>
     </div>
 
@@ -22,11 +24,13 @@ import QInputWithMenu from 'components/QInputWithMenu'
 import QInputSimple from 'components/QInputSimple'
 import ParagraphOfText from 'components/ParagraphOfText'
 import QDialogSample from 'components/QDialogSample'
+import DropdownMenu from 'components/DropdownMenu'
+import TextEditor from 'components/TextEditor'
 
 export default {
   name: 'PageIndex',
   components: {
-    QInputWithMenu, QInputSimple, ParagraphOfText, QDialogSample
+    QInputWithMenu, QInputSimple, ParagraphOfText, QDialogSample, DropdownMenu, TextEditor
   },
   data () {
     return {
